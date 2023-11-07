@@ -22,7 +22,7 @@ int main() {
     // printf("Enter total hours worked: ");
     scanf("%d", &totalHours);
     // printf("Enter wage rate: ");
-    scanf("%lf", &wageRate);
+    scanf("%.1lf", &wageRate);
 
     double totalSalary = calculateTotalSalary(totalHours, wageRate);
 
