@@ -18,10 +18,6 @@ int main() {
         calculateDegrees(hours, minutes, &hoursDegree, &minutesDegree);
         
         double totalDegrees = hoursDegree - minutesDegree; // The total degrees between the hands
-
-        if (totalDegrees < 0) {
-            totalDegrees = -totalDegrees; // Ensure it's positive
-        }
         if (totalDegrees > 180.0) {
             double total = totalDegrees - 180.0;
             printf(" %.3lf\n", total);
