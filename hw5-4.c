@@ -22,7 +22,6 @@ int main() {
         if (totalDegrees < 0) {
             totalDegrees = -totalDegrees; // Ensure it's positive
         }
-
         if (totalDegrees > 180.0) {
             double total = totalDegrees - 180.0;
             printf(" %.3lf\n", total);
@@ -30,6 +29,7 @@ int main() {
         else {
             printf(" %.3lf\n", totalDegrees);
         }
+       
     } else {
         printf("Invalid input. Please enter a valid time in the format HH:MM.\n");
     }
