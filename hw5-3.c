@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 double calculateTotalSalary(int totalHours, double wageRate) {
     double totalSalary;
@@ -11,7 +12,7 @@ double calculateTotalSalary(int totalHours, double wageRate) {
         totalSalary = (60 * wageRate) + (60 * wageRate * 1.33) + ((totalHours - 120) * wageRate * 1.66); // 33% increase after 60 hours, 66% increase after 120 hours
     }
 
-    return totalSalary;
+    return ceil(totalSalary * 100.0) / 100.0; // Round up to the nearest cent.
 }
 
 int main() {
@@ -31,4 +32,3 @@ int main() {
 
     return 0;
 }
-
